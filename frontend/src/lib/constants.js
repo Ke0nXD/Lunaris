@@ -15,6 +15,7 @@ export const NAV_LINKS = [
     { label: "Templates", href: "#templates", id: "templates" },
     { label: "Portfólio", href: "#portfolio", id: "portfolio" },
     { label: "Planos", href: "#planos", id: "planos" },
+    { label: "Perplexity", href: "#perplexity", id: "perplexity" },
     { label: "Suporte", href: "#suporte", id: "suporte" },
 ];
 

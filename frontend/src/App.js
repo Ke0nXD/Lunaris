@@ -9,6 +9,7 @@ import { Services } from "./components/Services";
 import { Templates } from "./components/Templates";
 import { Portfolio } from "./components/Portfolio";
 import { Plans } from "./components/Plans";
+import { PerplexitySection } from "./components/PerplexitySection";
 import { FinalCTA } from "./components/FinalCTA";
 import { Footer } from "./components/Footer";
 import { WhatsAppFloat } from "./components/WhatsAppFloat";
@@ -24,6 +25,7 @@ const Home = () => {
                 <Templates />
                 <Portfolio />
                 <Plans />
+                <PerplexitySection />
                 <FinalCTA />
             </main>
             <Footer />
