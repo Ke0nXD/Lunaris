@@ -26,7 +26,7 @@ export const Header = () => {
             }`}
             data-testid="site-header"
         >
-            <div className="max-w-7xl mx-auto px-6 lg:px-10 h-28 sm:h-32 lg:h-36 flex items-center justify-between">
+            <div className="max-w-7xl mx-auto px-6 lg:px-10 h-32 sm:h-40 lg:h-44 flex items-center justify-between">
                 {/* Logo */}
                 <a
                     href="#hero"
@@ -35,9 +35,9 @@ export const Header = () => {
                 >
                     <img
                         src={LOGO_URL}
-                        alt="Lunaris"
-                        className="h-20 sm:h-24 lg:h-28 w-auto select-none transition-transform duration-300 group-hover:scale-105"
-                        style={{ filter: "drop-shadow(0 0 26px rgba(167,139,250,0.55))" }}
+                        alt="Lunaris — Seu projeto em outra órbita"
+                        className="h-24 sm:h-32 lg:h-36 w-auto select-none transition-transform duration-300 group-hover:scale-105"
+                        style={{ filter: "drop-shadow(0 0 30px rgba(167,139,250,0.6))" }}
                         data-testid="header-logo-img"
                     />
                 </a>
