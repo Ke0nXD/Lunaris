@@ -7,7 +7,7 @@ export const buildWhatsappLink = (message = "Olá, vim do site da Lunaris e quer
     `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
 export const LOGO_URL =
-    "https://customer-assets.emergentagent.com/job_2406048f-ea78-49cb-959b-736f730c7016/artifacts/8uhp0f92_file_000000005f30720e8cffc90fe4cd257b.png";
+    "https://customer-assets.emergentagent.com/job_lunaris-cosmic/artifacts/oc569wu3_lunaris.png";
 
 export const NAV_LINKS = [
     { label: "Início", href: "#hero", id: "hero" },
