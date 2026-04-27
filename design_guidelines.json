@@ -1,0 +1,115 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 7 (Electric & Neon) + 5 (Jewel & Luxury) Hybrid - 'Cosmic Luxury'",
+  "colors": {
+    "primary": "#7C3AED",
+    "primary_hover": "#A78BFA",
+    "background": "#030108",
+    "background_secondary": "#0A071A",
+    "surface": "#130E26",
+    "surface_hover": "#1C1438",
+    "border": "#2A1F4C",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A19DB3",
+    "accent": "#A78BFA",
+    "success": "#22C55E"
+  },
+  "typography": {
+    "heading_font": "Unbounded",
+    "body_font": "Manrope",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-black",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "body": "text-base font-normal",
+      "small": "text-sm font-medium"
+    }
+  },
+  "layout": {
+    "spacing_scale": "Use p-6 to p-32, generous spacing for premium feel",
+    "container_max_width": "max-w-7xl mx-auto px-6 lg:px-8",
+    "grid_system": "Asymmetrical bento grids with gap-8 to gap-12"
+  },
+  "components": {
+    "button": "Rounded-full, premium feel. Primary buttons use bg-[#7C3AED] with text-white and shadow-[0_0_20px_rgba(124,58,237,0.4)]. Hover changes to bg-[#A78BFA] and intensifies glow.",
+    "cards": "Glassmorphism: bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl. Hover state: border-[#7C3AED]/50 shadow-[0_0_30px_rgba(124,58,237,0.15)] -translate-y-1 transition-all duration-300.",
+    "header": "Fixed top-0 w-full z-50. Glassmorphism: backdrop-blur-md bg-[#030108]/70 border-b border-white/5.",
+    "footer": "Deep dark solid background bg-[#030108], py-20, multi-column layout.",
+    "whatsapp_float": "Fixed bottom-6 right-6 z-50 bg-[#22C55E] text-white p-4 rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:scale-110 transition-transform cursor-pointer flex items-center justify-center"
+  },
+  "animations": {
+    "scroll_reveal": "Staggered fade-up (opacity 0 to 1, y: 20 to 0) using framer-motion.",
+    "hover": "Smooth scale up (scale-105) and enhanced border/shadow glow on cards.",
+    "parallax": "Subtle slow movement on background images and floating planet.",
+    "floating": "Continuous slow y-axis translate (animate={{ y: [-10, 10, -10] }} with duration 6s) on astronaut and hero mockups.",
+    "background_effects": "Blinking stars (opacity keyframes), moving particles, and glowing orbital lines in the background."
+  },
+  "media": [
+    {
+      "category": "logo",
+      "url": "https://customer-assets.emergentagent.com/job_2406048f-ea78-49cb-959b-736f730c7016/artifacts/8uhp0f92_file_000000005f30720e8cffc90fe4cd257b.png",
+      "description": "Lunaris Brand Logo"
+    },
+    {
+      "category": "hero_background",
+      "url": "https://images.unsplash.com/photo-1745661554426-66afd48de282",
+      "description": "Purple planet shining against dark cosmos (Use as overlay/bg in Hero)"
+    },
+    {
+      "category": "astronaut_support",
+      "url": "https://images.unsplash.com/photo-1768005419000-d53e45851b50",
+      "description": "Astronaut in white spacesuit (Use in Support and Final CTA)"
+    },
+    {
+      "category": "hero_mockups",
+      "url": "https://images.unsplash.com/photo-1771923082503-0a3381c46cef",
+      "description": "Modern laptop displaying dark-themed dashboard"
+    },
+    {
+      "category": "template_mockup",
+      "url": "https://static.prod-images.emergentagent.com/jobs/2406048f-ea78-49cb-959b-736f730c7016/images/12f9f1d3e258261e4494f52b946bc45356346aab768616b4a31e6dfe29c8ece0.png",
+      "description": "Sleek modern aesthetic clinic dark website mockup"
+    },
+    {
+      "category": "testimonial_avatar_1",
+      "url": "https://images.unsplash.com/photo-1769636929231-3cd7f853d038",
+      "description": "Testimonial Avatar 1"
+    },
+    {
+      "category": "testimonial_avatar_2",
+      "url": "https://images.unsplash.com/photo-1758534063829-a72058381e21",
+      "description": "Testimonial Avatar 2"
+    },
+    {
+      "category": "testimonial_avatar_3",
+      "url": "https://images.unsplash.com/photo-1765776830139-72b2184dae5a",
+      "description": "Testimonial Avatar 3"
+    }
+  ],
+  "pages_structure": {
+    "Home": {
+      "sections": [
+        "1. HEADER PREMIUM: Logo, Navigation, CTA WhatsApp",
+        "2. HERO: Headline with 'resultados' glowing, 2 CTAs, Mockups on right, Giant Planet & Orbits in bg",
+        "3. STRIP DE CONFIANÇA: Stats (+50 companies, 5 stars, etc.)",
+        "4. SERVIÇOS: 5 premium cards, Full-Stack highlighted. Hover glow.",
+        "5. TEMPLATES: Carousel of 5 models, from R$ 499",
+        "6. PORTFÓLIO: 4 mockups grid",
+        "7. DEPOIMENTOS: 3 cards",
+        "8. PLANOS: 3 pricing cards (Growth highlighted) + side section for Support with Astronaut",
+        "9. CTA FINAL: Massive WhatsApp button, floating astronaut bg",
+        "10. FOOTER: Comprehensive links and contacts"
+      ]
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install and use 'framer-motion' for all scroll reveals and floating animations.",
+    "Install and use 'lucide-react' for all icons.",
+    "Add font 'Unbounded' for headings and 'Manrope' for body from Google Fonts in index.html.",
+    "Apply 'data-testid' to all interactive elements, buttons, and links.",
+    "In the Hero section, wrap the word 'resultados' in a span with text-[#A78BFA] and drop-shadow-[0_0_15px_rgba(167,139,250,0.8)].",
+    "For the cosmic background, create a wrapper div with absolute positioning, -z-10, and a dark gradient `bg-gradient-to-b from-[#030108] via-[#0A071A] to-[#030108]`. Add animated SVG stars/particles over it.",
+    "The 'MAIS ESCOLHIDO' badge on the Growth plan should use bg-[#7C3AED] with a pulse animation.",
+    "Ensure the floating WhatsApp button is persistent across scroll."
+  ]
+}
