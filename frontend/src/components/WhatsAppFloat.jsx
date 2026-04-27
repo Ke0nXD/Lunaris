@@ -11,6 +11,8 @@ const WhatsAppIcon = ({ className = "w-7 h-7" }) => (
 
 export const WhatsAppFloat = () => {
     const [show, setShow] = useState(false);
+    const [hovered, setHovered] = useState(false);
+    const [autoTip, setAutoTip] = useState(false);
 
     useEffect(() => {
         const onScroll = () => setShow(window.scrollY > 400);
@@ -19,28 +21,74 @@ export const WhatsAppFloat = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
+    // Show tooltip briefly when button first appears, to draw attention
+    useEffect(() => {
+        if (!show) return;
+        const open = setTimeout(() => setAutoTip(true), 600);
+        const close = setTimeout(() => setAutoTip(false), 4200);
+        return () => {
+            clearTimeout(open);
+            clearTimeout(close);
+        };
+    }, [show]);
+
+    const tooltipVisible = hovered || autoTip;
+
     return (
         <AnimatePresence>
             {show && (
-                <motion.a
-                    href={buildWhatsappLink()}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <motion.div
                     initial={{ opacity: 0, scale: 0.5, y: 50 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.5, y: 50 }}
                     transition={{ type: "spring", stiffness: 200, damping: 18 }}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="fixed bottom-6 right-6 lg:bottom-8 lg:right-8 z-[60] w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-[#22C55E] hover:bg-[#16A34A] text-white flex items-center justify-center shadow-[0_0_30px_rgba(34,197,94,0.5)] hover:shadow-[0_0_50px_rgba(34,197,94,0.8)] transition-shadow duration-300"
-                    data-testid="whatsapp-floating-btn"
-                    aria-label="Falar no WhatsApp"
+                    className="fixed bottom-6 right-6 lg:bottom-8 lg:right-8 z-[60] flex items-center gap-3"
+                    onHoverStart={() => setHovered(true)}
+                    onHoverEnd={() => setHovered(false)}
+                    data-testid="whatsapp-floating-wrapper"
                 >
-                    {/* Pulse rings */}
-                    <span className="absolute inset-0 rounded-full bg-[#22C55E] opacity-50 animate-ping" />
-                    <span className="absolute inset-0 rounded-full bg-[#22C55E] opacity-30 animate-pulse" />
-                    <WhatsAppIcon className="w-7 h-7 lg:w-8 lg:h-8 relative z-10" />
-                </motion.a>
+                    {/* Tooltip */}
+                    <AnimatePresence>
+                        {tooltipVisible && (
+                            <motion.span
+                                initial={{ opacity: 0, x: 12, scale: 0.9 }}
+                                animate={{ opacity: 1, x: 0, scale: 1 }}
+                                exit={{ opacity: 0, x: 12, scale: 0.9 }}
+                                transition={{ duration: 0.25 }}
+                                className="select-none whitespace-nowrap text-sm font-semibold text-white px-4 py-2.5 rounded-full bg-[#030108]/90 backdrop-blur-md border border-[#A78BFA]/30 shadow-[0_8px_30px_rgba(124,58,237,0.35)] relative"
+                                data-testid="whatsapp-tooltip"
+                            >
+                                Fale com a Lunaris agora
+                                {/* Tooltip arrow */}
+                                <span
+                                    className="absolute top-1/2 -translate-y-1/2 right-[-6px] w-3 h-3 rotate-45 bg-[#030108]/90 border-r border-t border-[#A78BFA]/30"
+                                    aria-hidden="true"
+                                />
+                            </motion.span>
+                        )}
+                    </AnimatePresence>
+
+                    {/* The actual button */}
+                    <motion.a
+                        href={buildWhatsappLink()}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        animate={{ y: [0, -4, 0] }}
+                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                        whileHover={{ scale: 1.1, rotate: -4 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="relative w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-[#22C55E] hover:bg-[#16A34A] text-white flex items-center justify-center shadow-[0_0_30px_rgba(34,197,94,0.5)] hover:shadow-[0_0_50px_rgba(34,197,94,0.8)] transition-shadow duration-300"
+                        data-testid="whatsapp-floating-btn"
+                        aria-label="Fale com a Lunaris no WhatsApp"
+                    >
+                        {/* Pulse rings */}
+                        <span className="absolute inset-0 rounded-full bg-[#22C55E] opacity-50 animate-ping" />
+                        <span className="absolute inset-0 rounded-full bg-[#22C55E] opacity-30 animate-pulse" />
+                        <WhatsAppIcon className="w-7 h-7 lg:w-8 lg:h-8 relative z-10" />
+                        {/* Notification dot */}
+                        <span className="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-[#7C3AED] border-2 border-[#030108] z-10 animate-pulse" />
+                    </motion.a>
+                </motion.div>
             )}
         </AnimatePresence>
     );
