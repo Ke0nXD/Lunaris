@@ -18,8 +18,8 @@ export const Footer = () => {
                         <img
                             src={LOGO_URL}
                             alt="Lunaris"
-                            className="h-14 w-auto mb-5"
-                            style={{ filter: "drop-shadow(0 0 16px rgba(167,139,250,0.4))" }}
+                            className="h-20 sm:h-24 lg:h-28 w-auto mb-5"
+                            style={{ filter: "drop-shadow(0 0 18px rgba(167,139,250,0.45))" }}
                             data-testid="footer-logo"
                         />
                         <p className="text-white/60 text-sm leading-relaxed max-w-xs">
