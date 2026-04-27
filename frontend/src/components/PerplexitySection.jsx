@@ -14,16 +14,50 @@ const AI_MODELS = [
     { name: "Sonar 2", color: "from-cyan-400 to-sky-500" },
 ];
 
-const LOREM_PLACEHOLDER = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+const LOREM_PLACEHOLDER = `Perplexity PRO é uma ferramenta útil para diversos perfis, desde pessoas que buscam praticidade no dia a dia até estudantes, programadores, empresários e profissionais autônomos. Seu principal diferencial está em oferecer respostas rápidas, organizadas e com fontes citadas, facilitando pesquisas, decisões e produtividade.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+PARA USO NO DIA A DIA
 
-• Lorem ipsum dolor sit amet
-• Consectetur adipiscing elit
-• Sed do eiusmod tempor incididunt
-• Ut labore et dolore magna aliqua
+• Respostas rápidas e confiáveis, com fontes citadas.
+• Pesquisas em tempo real sobre notícias, promoções, produtos, saúde, finanças e rotina.
+• Ajuda para escolher TV, celular, plano de internet ou plano de saúde.
+• Organização pessoal: refeições, viagens rápidas, listas de compras e checklists.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`;
+PARA ESTUDANTES
+
+• Ideal para ensino médio, faculdade, técnico e pós-graduação.
+• Grande volume de citações para trabalhos, TCC e revisão bibliográfica.
+• Upload de PDFs, apostilas e anotações para resumos, flashcards e perguntas de revisão.
+• Explicações simples de matemática, física, legislação e temas complexos.
+• Recursos interativos de estudo, como questionários e cartões de memória.
+
+PARA EMPRESÁRIOS E GESTORES
+
+• Útil para lojas, clínicas, consultórios e pequenas empresas.
+• Pesquisa de mercado e concorrência para entender preços e público-alvo.
+• Apoio em finanças, planilhas simples e organização contábil.
+• Criação de contratos, propostas, e-mails e manuais internos.
+• Ideias de campanhas, anúncios, SEO e conteúdo para redes sociais.
+
+PARA PROGRAMADORES E TECNOLOGIA
+
+• Análise de código ao enviar scripts, logs de erro ou arquivos.
+• Pesquisa técnica sobre APIs, frameworks, erros e documentação.
+• Geração de código, integrações e estrutura inicial de sistemas.
+• Modelos avançados de IA para debugging e arquitetura.
+
+PARA MINIEMPREENDEDORES E FREELANCERS
+
+• Ideal para designers, editores, social media e prestadores de serviço.
+• Criação de posts, anúncios, landing pages e descrições de produtos.
+• Ideias visuais para thumbnails, mockups e capas.
+• Modelos de propostas, orçamentos e organização de entregas.
+• Scripts de venda, negociação e mensagens profissionais.
+
+RESUMO GERAL
+
+O Perplexity PRO reúne pesquisa rápida, IA e produtividade em um só lugar. Pode servir tanto para tarefas simples quanto para acelerar estudos, negócios e projetos profissionais.
+`;
 
 export const PerplexitySection = () => {
     const [open, setOpen] = useState(false);
