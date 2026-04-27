@@ -16,7 +16,7 @@ export const Hero = () => {
     return (
         <section
             id="hero"
-            className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden"
+            className="relative pt-40 pb-20 lg:pt-48 lg:pb-28 overflow-hidden"
             data-testid="hero-section"
         >
             {/* Giant Planet on the right */}
