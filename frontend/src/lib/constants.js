@@ -1,7 +1,7 @@
 // LUNARIS — Site data and constants
-export const WHATSAPP_NUMBER = "5511999999999";
-export const WHATSAPP_DISPLAY = "(11) 99999-9999";
-export const EMAIL = "contato@lunaris.com.br";
+export const WHATSAPP_NUMBER = "5537999875584";
+export const WHATSAPP_DISPLAY = "(37) 99987-5584";
+export const EMAIL = "keversonloyola@gmail.com";
 
 export const buildWhatsappLink = (message = "Olá, vim do site da Lunaris e quero pedir um orçamento.") =>
     `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
@@ -72,35 +72,35 @@ export const TEMPLATES = [
     {
         name: "Restaurante Premium",
         category: "Gastronomia",
-        price: "R$ 499",
+        price: "R$ 297",
         image:
             "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80",
     },
     {
         name: "Clínica & Saúde",
         category: "Medicina",
-        price: "R$ 499",
+        price: "R$ 297",
         image:
             "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80",
     },
     {
         name: "Advocacia",
         category: "Jurídico",
-        price: "R$ 499",
+        price: "R$ 297",
         image:
             "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=900&q=80",
     },
     {
         name: "Estética & Beleza",
         category: "Bem-estar",
-        price: "R$ 499",
+        price: "R$ 297",
         image:
             "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80",
     },
     {
         name: "Loja Local",
         category: "E-commerce",
-        price: "R$ 499",
+        price: "R$ 297",
         image:
             "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80",
     },
@@ -161,7 +161,7 @@ export const PLANS = [
     {
         name: "Start",
         tagline: "Ideal para quem está começando no digital",
-        price: "799",
+        price: "297,00",
         features: [
             "Site até 5 páginas",
             "Design personalizado",
@@ -174,7 +174,7 @@ export const PLANS = [
     {
         name: "Growth",
         tagline: "Mais performance e para negócios exigentes",
-        price: "1.499",
+        price: "497,90",
         features: [
             "Site até 10 páginas",
             "Design premium",
@@ -188,7 +188,7 @@ export const PLANS = [
     {
         name: "Premium",
         tagline: "Solução completa para empresas exigentes",
-        price: "2.999",
+        price: "1.499,90",
         features: [
             "Páginas ilimitadas",
             "Sistema personalizado",
