@@ -28,14 +28,16 @@ export const Footer = () => {
 
                         <div className="mt-6 flex items-center gap-3">
                             {[
-                                { icon: Instagram, href: "#", id: "instagram" },
-                                { icon: Linkedin, href: "#", id: "linkedin" },
-                                { icon: Facebook, href: "#", id: "facebook" },
-                                { icon: Github, href: "#", id: "github" },
+                                { icon: Instagram, href: "https://instagram.com/seuusuario", id: "instagram" },
+                                { icon: Linkedin, href: "https://linkedin.com/in/seuusuario", id: "linkedin" },
+                                { icon: Facebook, href: "https://facebook.com/seuusuario", id: "facebook" },
+                                { icon: Github, href: "https://github.com/seuusuario", id: "github" },
                             ].map(({ icon: Icon, href, id }) => (
                                 <a
                                     key={id}
                                     href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="w-10 h-10 rounded-full glass hover:border-[#A78BFA]/40 flex items-center justify-center text-white/70 hover:text-white transition-all"
                                     aria-label={id}
                                     data-testid={`social-${id}`}
