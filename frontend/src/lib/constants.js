@@ -186,7 +186,7 @@ export const PLANS = [
         badge: "MAIS ESCOLHIDO",
     },
     {
-        name: "Premium",
+        name: "Plus",
         tagline: "Solução completa para empresas exigentes",
         price: "1.499,90",
         features: [
@@ -195,6 +195,21 @@ export const PLANS = [
             "SEO avançado",
             "Relatórios e métricas",
             "Suporte dedicado",
+            "Aplicativo web",
+        ],
+        highlighted: false,
+    },
+    {
+        name: "Premium",
+        tagline: "O pacote definitivo para escalar sua marca",
+        price: "2.490,90",
+        features: [
+            "Páginas ilimitadas",
+            "Sistema personalizado",
+            "SEO avançado",
+            "Relatórios e métricas",
+            "Suporte dedicado",
+            "Aplicativo web",
         ],
         highlighted: false,
     },
