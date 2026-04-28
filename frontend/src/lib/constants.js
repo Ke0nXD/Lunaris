@@ -161,7 +161,7 @@ export const PLANS = [
     {
         name: "Start",
         tagline: "Ideal para quem está começando no digital",
-        price: "799",
+        price: "297,00",
         features: [
             "Site até 5 páginas",
             "Design personalizado",
@@ -174,7 +174,7 @@ export const PLANS = [
     {
         name: "Growth",
         tagline: "Mais performance e para negócios exigentes",
-        price: "1.499",
+        price: "497,90",
         features: [
             "Site até 10 páginas",
             "Design premium",
@@ -186,15 +186,30 @@ export const PLANS = [
         badge: "MAIS ESCOLHIDO",
     },
     {
-        name: "Premium",
+        name: "Plus",
         tagline: "Solução completa para empresas exigentes",
-        price: "2.999",
+        price: "1.499,90",
         features: [
             "Páginas ilimitadas",
             "Sistema personalizado",
             "SEO avançado",
             "Relatórios e métricas",
             "Suporte dedicado",
+            "Aplicativo web",
+        ],
+        highlighted: false,
+    },
+    {
+        name: "Premium",
+        tagline: "O pacote definitivo para escalar sua marca",
+        price: "2.490,90",
+        features: [
+            "Páginas ilimitadas",
+            "Sistema personalizado",
+            "SEO avançado",
+            "Relatórios e métricas",
+            "Suporte dedicado",
+            "Aplicativo web",
         ],
         highlighted: false,
     },

@@ -16,9 +16,9 @@ const PlanCard = ({ plan, index }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
             whileHover={{ y: -8 }}
-            className={`relative rounded-2xl p-8 transition-all duration-500 ${
+            className={`relative rounded-2xl p-6 lg:p-7 transition-all duration-500 ${
                 isHighlighted
-                    ? "bg-gradient-to-br from-[#1C1438] to-[#0A071A] border-2 border-[#7C3AED]/50 shadow-[0_0_50px_rgba(124,58,237,0.25)] lg:scale-[1.04]"
+                    ? "bg-gradient-to-br from-[#1C1438] to-[#0A071A] border-2 border-[#7C3AED]/50 shadow-[0_0_50px_rgba(124,58,237,0.25)] xl:scale-[1.03]"
                     : "glass glow-border"
             }`}
             data-testid={`plan-card-${plan.name.toLowerCase()}`}
@@ -47,9 +47,9 @@ const PlanCard = ({ plan, index }) => {
 
             <div className="mt-6 pb-6 border-b border-white/10">
                 <span className="text-xs text-white/55 block">a partir de</span>
-                <div className="mt-1 flex items-baseline gap-1">
+                <div className="mt-1 flex items-baseline gap-1 flex-wrap">
                     <span className="text-sm text-white/70 font-heading font-semibold">R$</span>
-                    <span className="font-heading text-5xl font-black text-white tracking-tight">{plan.price}</span>
+                    <span className="font-heading text-3xl sm:text-4xl xl:text-[2.5rem] font-black text-white tracking-tight leading-none">{plan.price}</span>
                 </div>
             </div>
 
@@ -109,7 +109,7 @@ export const Plans = () => {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-7">
                     {PLANS.map((plan, idx) => (
                         <PlanCard key={plan.name} plan={plan} index={idx} />
                     ))}
