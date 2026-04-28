@@ -14,7 +14,9 @@ const AI_MODELS = [
     { name: "Sonar 2", color: "from-cyan-400 to-sky-500" },
 ];
 
-const LOREM_PLACEHOLDER = `Perplexity PRO é uma ferramenta útil para diversos perfis, desde pessoas que buscam praticidade no dia a dia até estudantes, programadores, empresários e profissionais autônomos. Seu principal diferencial está em oferecer respostas rápidas, organizadas e com fontes citadas, facilitando pesquisas, decisões e produtividade.
+const LOREM_PLACEHOLDER = `Pague apenas 1 vez, Livre de mensalidade!
+
+Perplexity PRO é uma ferramenta útil para diversos perfis, desde pessoas que buscam praticidade no dia a dia até estudantes, programadores, empresários e profissionais autônomos. Seu principal diferencial está em oferecer respostas rápidas, organizadas e com fontes citadas, facilitando pesquisas, decisões e produtividade.
 
 PARA USO NO DIA A DIA
 
@@ -112,9 +114,9 @@ export const PerplexitySection = () => {
                                 <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-white text-balance leading-[1.1]">
                                     Tenha a{" "}
                                     <span className="gradient-purple-text text-glow-purple">Perplexity</span>{" "}
-                                    por 1 ano por apenas{" "}
+                                    por 1 ano, <strong>Sem Mensalidade</strong> por apenas{" "}
                                     <span className="relative inline-block">
-                                        <span className="gradient-purple-text">(valor)</span>
+                                        <span className="gradient-purple-text">119,90</span>
                                         <span className="absolute -inset-x-2 inset-y-0 rounded-md bg-[#7C3AED]/10 -z-10" />
                                     </span>
                                 </h2>
